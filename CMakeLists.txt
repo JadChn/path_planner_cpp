@@ -12,6 +12,7 @@ find_package(nav2_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(rclcpp_action REQUIRED)
+find_package(std_srvs REQUIRED) 
 
 include_directories(include)
 
@@ -23,6 +24,7 @@ ament_target_dependencies(planner_node
   nav2_msgs
   geometry_msgs
   nav_msgs
+  std_srvs
 )
 
 install(TARGETS
